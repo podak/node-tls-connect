@@ -228,7 +228,7 @@ function connect(/* [port, host], options, cb */) {
                  options.socket && options.socket._host ||
                  '127.0.0.1',
       NPN = {},
-      credentials = options.credentials || crypto.createCredentials(options);
+      credentials = options.credentials || tls.createSecureContext(options);
   if (tls.convertNPNProtocols)
     tls.convertNPNProtocols(options.NPNProtocols, NPN);
 

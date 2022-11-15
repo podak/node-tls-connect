@@ -1,6 +1,8 @@
 
 *This Package holds a patch for nodejs >=0.11*
 
+This fork introduces compatibility with node 12.x
+
 to opt-in until nodejs merges this (or not) you can use this package as a drop-in replacement.
 
 ```bash
